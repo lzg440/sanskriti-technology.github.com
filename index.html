@@ -1,26 +1,257 @@
-<html><body><p>Hello World sanskriti  </p>
-  <script data-ad-client="ca-pub-6722262075360736" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<header class="entry-header">
-<h1 class="entry-title">Displaying HTML Files in GitHub</h1> </header>
-<div class="entry-content">
-<p>Setting up an HTML page in GitHub is not difficult but it is a bit lengthy. Just follow these steps.</p>
-<ol>
-<li>Create the HTML from your RMarkdown document and save to your local directory.</li>
-<li>Create a new repo, or go to an existing repo, in your GitHub.</li>
-<li>In the repo, create a new file called <code>docs/index.html</code>.</li>
-<li>In the <code>index.html</code> file, type this code: <code>&lt;html&gt;&lt;body&gt;&lt;p&gt;Hello World&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</code></li>
-<li>Commit the file.</li>
-<li>In the repo, click on the Settings tab.</li>
-<li>Scroll down to GitHub Pages Section.</li>
-<li>Under “Source”, choose “master branch/docs folder” and save. If that doesn’t work, try the “master branch” and save.</li>
-<li>A message will appear that your site is read to be published. Click on the link.</li>
-<li>When Git finds the <code>index.html</code> file in a <code>docs/</code> folder, it creates a web address for the contents. The address takes the form: <code>http://username.github.io/repository</code></li>
-<li>Go to that address. You should see your “Hello World” greeting. That is your <code>index.html</code> file.</li>
-<li>Go back to the <code>docs/</code> folder and open it.</li>
-<li>Upload the HTML file you created in RMarkdown and commit.</li>
-<li>Return to your github.io site but add the HTML file name to the address: <code>http://username.github.io/repository/filename.html</code>.</li>
-<li>You should find your HTML posted there.</li>
-</ol>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sanskrithi Technology</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #70F3F1;
+  padding: 15px;
+  text-align: center;
+  font-size: 35px;
+  color: red;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: auto;
+ /* height: 300px; only for demonstration, should be removed */
+  /* background: #ccc; */
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: #C5DEF6;
+ /* height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #566767;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2>Sanskrithi Technology</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Updating Kivy from a previous release</a></li>
+      <li><a href="#">Installing the kivy stable release</a></li>
+      <li><a href="#">What are wheels, pip and wheel</a></li>
+	  <li><a href="#">Kivy’s dependencies</a></li>
+    </ul>
+	 <h1 style="background-color:LightGray;"><a href="https://www.lfd.uci.edu/~gohlke/pythonlibs/">Unofficial Windows Binaries for Python Extension Packages</a></h1>
+  </nav>
+  
+  <article>
+  
+   <div class="section" id="updating-kivy-from-a-previous-release">
+   <div>
+   <h1 style="background-color:Tomato;">How to install Kivy on windows</h1>
+  
+  </div>
+<h2>Updating Kivy from a previous release</h2>
+<p>When updating from a previous Kivy release, all the Kivy dependencies must be
+updated first. Typically, just adding <cite>–upgrade</cite> to the <cite>pip install …</cite> commands below
+is sufficient for pip to update them.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p>When updating from Kivy 1.10.1 or lower to 1.11.0 or higher, one <strong>must</strong> manually
+uninstall all kivy dependencies before upgrading because won’t update them properly.
+This is done with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">uninstall</span> <span class="o">-</span><span class="n">y</span> <span class="n">kivy</span><span class="o">.</span><span class="n">deps</span><span class="o">.</span><span class="n">glew</span> <span class="n">kivy</span><span class="o">.</span><span class="n">deps</span><span class="o">.</span><span class="n">gstreamer</span> <span class="n">kivy</span><span class="o">.</span><span class="n">deps</span><span class="o">.</span><span class="n">sdl2</span> <span class="n">kivy</span><span class="o">.</span><span class="n">deps</span><span class="o">.</span><span class="n">angle</span>
+</pre></div>
 </div>
-<footer class="entry-footer">
- </body></html>
+<p>assuming all the dependencies were previously installed. See Kivy’s dependencies for more details.</p>
+<p class="last">After uninstalling, continue with the installation below.</p>
+</div>
+</div>
+<div class="section" id="installing-the-kivy-stable-release">
+<h2>Installing the kivy stable release</h2>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Kivy 1.11.1 is the last release that supports Python 2.</p>
+</div>
+<p>Now that python is installed, open the <a class="reference internal" href="https://kivy.org/doc/stable/installation/installation-windows.html#windows-run-app"><span class="std std-ref">Command line</span></a> and make sure
+python is available by typing <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">--version</span></code>. Then, do the following to
+create a new <a class="reference external" href="https://virtualenv.pypa.io/en/latest/">virtual environment</a>
+(optionally) and install the most recent stable
+kivy release (<cite>1.11.1</cite>) and its dependencies.</p>
+<ol class="arabic">
+<li><p class="first">Ensure you have the latest pip, wheel, and virtualenv:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="o">--</span><span class="n">upgrade</span> <span class="n">pip</span> <span class="n">wheel</span> <span class="n">setuptools</span> <span class="n">virtualenv</span>
+</pre></div>
+</div>
+<p>Optionally create a new <a class="reference external" href="https://virtualenv.pypa.io/en/latest/">virtual environment</a>
+for your Kivy project. Highly recommended:</p>
+<ol class="arabic">
+<li><p class="first">First create the environment named <cite>kivy_venv</cite> in your current directory:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">virtualenv</span> <span class="n">kivy_venv</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Activate the virtual environment. You’ll have to do this step from the current directory
+<strong>every time</strong> you start a new terminal. On windows CMD do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">kivy_venv</span>\<span class="n">Scripts</span>\<span class="n">activate</span>
+</pre></div>
+</div>
+<p>If you’re in a bash terminal, instead do:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">source</span> <span class="n">kivy_venv</span><span class="o">/</span><span class="n">Scripts</span><span class="o">/</span><span class="n">activate</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>Your terminal should now preface the path with something like <cite>(kivy_venv)</cite>, indicating that
+the <cite>kivy_venv</cite> environment is active. If it doesn’t say that, the virtual environment is not active.</p>
+</li>
+<li><p class="first">Install the dependencies (skip gstreamer (~120MB) if not needed, see
+Kivy’s dependencies). If you are upgrading Kivy, see Updating Kivy from a previous release:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">docutils</span> <span class="n">pygments</span> <span class="n">pypiwin32</span> <span class="n">kivy_deps</span><span class="o">.</span><span class="n">sdl2</span><span class="o">==</span><span class="mf">0.1</span><span class="o">.*</span> <span class="n">kivy_deps</span><span class="o">.</span><span class="n">glew</span><span class="o">==</span><span class="mf">0.1</span><span class="o">.*</span>
+<span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">kivy_deps</span><span class="o">.</span><span class="n">gstreamer</span><span class="o">==</span><span class="mf">0.1</span><span class="o">.*</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you encounter a <cite>MemoryError</cite> while installing, add after
+<cite>pip install</cite> the <cite>–no-cache-dir</cite> option.</p>
+</div>
+<p>For Python 3.5+, you can also use the angle backend instead of glew. This
+can be installed with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">kivy_deps</span><span class="o">.</span><span class="n">angle</span><span class="o">==</span><span class="mf">0.1</span><span class="o">.*</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">When installing, pin kivy’s dependencies to the specific version that was released on pypi
+when your kivy version was released, like above. Otherwise you may get an incompatible dependency
+when it is updated in the future.</p>
+</div>
+</li>
+<li><p class="first">Install kivy:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">kivy</span><span class="o">==</span><span class="mf">1.11</span><span class="o">.</span><span class="mi">1</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">(Optionally) Install the kivy examples:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">kivy_examples</span><span class="o">==</span><span class="mf">1.11</span><span class="o">.</span><span class="mi">1</span>
+</pre></div>
+</div>
+<p>The examples are installed in the share directory under the root directory where python is installed.</p>
+</li>
+</ol>
+<p>That’s it. You should now be able to <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">kivy</span></code> in python or run a basic
+example if you installed the kivy examples:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">kivy_venv</span>\<span class="n">share</span>\<span class="n">kivy</span><span class="o">-</span><span class="n">examples</span>\<span class="n">demo</span>\<span class="n">showcase</span>\<span class="n">main</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>Replace <cite>kivy_venv</cite> with the path where python is installed if you didn’t use a virtualenv.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you encounter any <strong>permission denied</strong> errors, try opening the
+<a class="reference external" href="https://technet.microsoft.com/en-us/library/cc947813%28v=ws.10%29.aspx">Command prompt as administrator</a>
+and trying again. The best solution for this is to use a virtual environment
+instead.</p>
+</div>
+</div>
+<div class="section" id="what-are-wheels-pip-and-wheel">
+<h2>What are wheels, pip and wheel</h2>
+<p>In Python, packages such as Kivy can be installed with the python package
+manager, <a class="reference external" href="https://pip.pypa.io/en/stable/">pip</a>. Some packages such as Kivy
+require additional steps, such as compilation, when installing using the Kivy
+source code with pip. Wheels (with a <code class="docutils literal notranslate"><span class="pre">.whl</span></code> extension) are pre-built
+distributions of a package that has already been compiled and do not require
+additional steps to install.</p>
+<p>When hosted on <a class="reference external" href="https://pypi.python.org/pypi">pypi</a> one installs a wheel
+using <code class="docutils literal notranslate"><span class="pre">pip</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">kivy</span></code>. When downloading and
+installing a wheel directly, <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">pip</span> <span class="pre">install</span> <span class="pre">wheel_file_name</span></code> is used,
+such as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Kivy</span><span class="o">-</span><span class="mf">1.9</span><span class="o">.</span><span class="mf">1.</span><span class="n">dev</span><span class="o">-</span><span class="n">cp27</span><span class="o">-</span><span class="n">none</span><span class="o">-</span><span class="n">win_amd64</span><span class="o">.</span><span class="n">whl</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="kivy-s-dependencies">
+<h2>Kivy’s dependencies</h2>
+<p>We offer wheels for Kivy and its dependencies separately so only desired
+dependencies need be installed. The dependencies are offered as
+optional sub-packages of kivy_deps, e.g. <code class="docutils literal notranslate"><span class="pre">kivy_deps.sdl2</span></code>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">In Kivy 1.11.0 we transitioned the kivy Windows dependencies from the
+<cite>kivy.deps.xxx</cite> namespace stored under <cite>kivy/deps/xxx</cite> to the
+<cite>kivy_deps.xxx</cite> namespace stored under <cite>kivy_deps/xxx</cite>. Pip is
+sometimes not able to distinguish between these two formats, so follow the
+instructions at Updating Kivy from a previous release when upgrading from a older Kivy.
+See <a class="reference external" href="https://github.com/kivy/kivy/wiki/Moving-kivy.garden.xxx-to-kivy_garden.xxx-and-kivy.deps.xxx-to-kivy_deps.xxx#kivy-deps">here</a>
+for more details.</p>
+</div>
+<p>Currently on Windows, we provide the following dependency wheels:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://gstreamer.freedesktop.org/">gstreamer</a> for audio and video</li>
+<li><a class="reference external" href="http://glew.sourceforge.net/">glew</a> and/or
+<a class="reference external" href="https://github.com/Microsoft/angle">angle (3.5 only)</a> for OpenGL</li>
+<li><a class="reference external" href="https://libsdl.org/">sdl2</a> for control and/or OpenGL.</li>
+</ul>
+<p>One can select which of these to use for OpenGL using the
+<cite>KIVY_GL_BACKEND</cite> envrionment variable by setting it to <cite>glew</cite>
+(the default), <cite>angle</cite>, or <cite>sdl2</cite>. <cite>angle</cite> is currently
+in an experimental phase as a substitute for <cite>glew</cite> on Python
+3.5+ only.</p>
+<p><cite>gstreamer</cite> is an optional dependency which only needs to be
+installed if video display or audio is desired. <cite>ffpyplayer</cite>
+is an alternate dependency for audio or video.</p>
+</div>
+  </article>
+</section>
+
+<footer>
+  <p>Subscribe to Youtube Channel <a href="https://www.youtube.com/channel/UC4YAYUm6fI1brnvmUhAb-YA">Click here</a></p>
+</footer>
+
+</body>
+</html>
