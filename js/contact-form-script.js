@@ -19,7 +19,7 @@ function submitForm(){
     var number = $("#number").val();
     var message = $("#message").val();
 
-alert("name");
+
     $.ajax({
         type: "POST",
         url: "php/form-process.php",
