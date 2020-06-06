@@ -6,7 +6,7 @@ $("#contactForm").validator().on("submit", function (event) {
     } else {
         // everything looks good!
         event.preventDefault();
-        alert(" I am here");
+        
         submitForm();
     }
 });
@@ -19,7 +19,7 @@ function submitForm(){
     var number = $("#number").val();
     var message = $("#message").val();
 
-
+alert(name);
     $.ajax({
         type: "POST",
         url: "php/form-process.php",
