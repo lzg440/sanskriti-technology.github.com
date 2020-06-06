@@ -20,7 +20,7 @@ function submitForm(){
     var message = $("#message").val();
 
 
-    $.ajax(alert(text);{
+    $.ajax(alert("inside ajex");{
         type: "POST",
         url: "php/form-process.php",
         data: "name=" + name + "&email=" + email + "&number=" + number + "&message=" + message,
