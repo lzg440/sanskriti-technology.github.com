@@ -6,6 +6,7 @@ $("#contactForm").validator().on("submit", function (event) {
     } else {
         // everything looks good!
         event.preventDefault();
+        alert(" I am here");
         submitForm();
     }
 });
@@ -15,15 +16,16 @@ function submitForm(){
     // Initiate Variables With Form Content
     var name = $("#name").val();
     var email = $("#email").val();
-    var msg_subject = $("#msg_subject").val();
+    var number = $("#number").val();
     var message = $("#message").val();
 
 
     $.ajax({
         type: "POST",
         url: "php/form-process.php",
-        data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
+        data: "name=" + name + "&email=" + email + "&number=" + number + "&message=" + message,
         success : function(text){
+            alert(text);
             if (text == "success"){
                 formSuccess();
             } else {
