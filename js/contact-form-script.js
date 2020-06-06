@@ -20,12 +20,12 @@ function submitForm(){
     var message = $("#message").val();
 
 
-    $.ajax(alert("inside ajex");{
+    $.ajax({
         type: "POST",
         url: "php/form-process.php",
         data: "name=" + name + "&email=" + email + "&number=" + number + "&message=" + message,
         success : function(text){
-            
+            alert(text);
             if (text == "success"){
                 formSuccess();
             } else {
