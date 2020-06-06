@@ -24,6 +24,7 @@ function submitForm(){
         url: "php/form-process.php",
         data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
         success : function(text){
+alert (text) ;
             if (text == "success"){
                 formSuccess();
             } else {
