@@ -5,28 +5,12 @@ $("#contactForm").validator().on("submit", function (event) {
         submitMSG(false, "Did you fill in the form properly?");
     } else {
         // everything looks good!
-		
         event.preventDefault();
         submitForm();
     }
 });
-function submitForm(){
- var form = $(this);
-    //var url = form.attr('action');
-
-    $.ajax({
-           type: "POST",
-           url: "php/form-process.php",
-           data: form.serialize(), // serializes the form's elements.
-           success: function(data)
-           {
-               alert(data); // show response from the php script.
-           }
-         });
 
 
-}
-/*
 function submitForm(){
     // Initiate Variables With Form Content
     var name = $("#name").val();
@@ -38,19 +22,18 @@ function submitForm(){
     $.ajax({
         type: "POST",
         url: "php/form-process.php",
-        data: "&name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
+        data: "name=" + name + "&email=" + email + "&msg_subject=" + msg_subject + "&message=" + message,
         success : function(text){
             if (text == "success"){
                 formSuccess();
             } else {
                 formError();
                 submitMSG(false,text);
-				
             }
         }
     });
 }
-*/
+
 function formSuccess(){
     $("#contactForm")[0].reset();
     submitMSG(true, "Message Submitted!")
