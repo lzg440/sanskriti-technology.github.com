@@ -1,0 +1,189 @@
+This is a most basic starter with boost-python using homebrew with the following structure
+
+Assumptions
+
+Get boost-python
+
+A simple example: "Hello World!"
+
+Compiling with Python
+
+Running
+
+Wrapping multiple functions in a module
+
+Compiling
+
+Running
+
+References
+
+All the source code can be found in this repository.
+
+Assumptions
+
+Familiarity python as a minimum requirement
+
+Have homebrew installed
+
+python 2.7
+
+Vague C/C++ knowledge i.e. be able to write a function!
+
+Mac OS X - I used El Capitan 10.11.6 at the time of writing
+
+Get boost-python
+
+You can obtain the correct boost-python through homebrew via the command:
+
+brew install boost --with-python --build-from-source
+
+I think brew install boost should work but it’s a big install and life is short to do it twice
+
+A simple example: "Hello World!"
+
+The following code wraps the C++ function greet() as a python extension named hello_ext. Save this as a .cpp file. To avoid ambiguity with internal functions name it something random e.g. hippopotaplusplus.cpp
+
+#include <boost/python.hpp>
+
+char const* greet()
+
+{
+
+   return "Greetings!";
+
+}
+
+BOOST_PYTHON_MODULE(hello_ext)
+
+{
+
+    using namespace boost::python;
+
+	def("greet", greet);}
+
+This code cannot be called until it is compiled - see below
+
+greet() is exclusively a C++ function
+
+BOOST_PYTHON_MODULE(hello_ext) defines a module that can be called from python as
+
+import hello_ext
+
+using namespace boost::python allowsdef instead of boost::python::def each time
+
+The method boost::python::def defines the second argument (the C++ function) greet as a python function (named by the string) "greet". We call this function in python as
+
+import hello_ext
+
+hello_ext.greet()
+
+if we had used def("example", greet); we would call in python as hello_ext.example()
+
+Compiling with Python
+
+The following python module can be used to compile and link the code in hippopotaplusplus.cpp to a python-friendly module
+
+from distutils.core import setup
+
+from distutils.extension import Extension
+
+ext_instance = Extension(
+
+    'hello_ext',
+
+    sources=['hippopotaplusplus.cpp'],
+
+    libraries=['boost_python-mt'],
+
+)
+
+setup(
+
+    name='hello-world',
+
+    version='0.1',
+
+    ext_modules=[ext_instance])
+
+The first string argument of Extension must match the variable declared in the .cpp file by the line
+
+BOOST_PYTHON_MODULE(variable)
+
+in this case it is hello_ext. If this is incorrect, the code will compile but an attempt to import in python will produce the error
+
+ImportError: dynamic module does not define init function
+
+The augment sources defines the cpp file that is to be compiled
+
+The argument of libraries=['boost_python-mt'] is the required library installed by homebrew
+
+The argument to ext_modules=[ext_instance]) points to the instance of Extension
+
+The name and version are really for building packages and not necessary here
+
+For more details, the [official docs][5] for distutils are well written
+
+Running
+
+The code is compiled with python through the following command
+
+python setup.py build_ext --inplace
+
+which will create the following build/ directory and file
+
+build/
+
+hello_ext.so
+
+This can be directly now called by python with
+
+import hello_ext
+
+hello_ext.greet()
+
+Wrapping multiple functions in a module
+
+We can define several functions in external files by moving greet to its own file greet.cpp and creating another file with the function meet saved as meet.cpp
+
+char const* meet()
+
+{
+
+   return "Nice to meet you from Boost!";
+
+}
+
+We can link this in the following manner with hippopotaplusplus.cpp as
+
+#include <greet.hpp>
+
+#include <meet.hpp>
+
+#include <boost/python.hpp>
+
+BOOST_PYTHON_MODULE(hello_ext)
+
+{
+
+    using namespace boost::python;
+
+    def("greet", greet);
+
+	def("meet", meet);
+
+}
+
+Compiling
+
+The setup.py file to compile the code is structured exactly the same as above
+
+Running
+
+The running of the code is also exactly the same as above except now we can call both functions
+
+import hello_ext
+
+hello_ext.greet()
+
+hello_ext.meet()
