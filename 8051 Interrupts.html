@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Sanskrithi Technology - courses</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="about_us" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/loader.gif" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-header">
+        <nav class="navbar header-nav navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="index.html">Home</a></li>  
+                        <li><a class="nav-link" href="course.html">courses</a></li>
+						<li><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li><a class="nav-link" href="#">About us</a></li>
+						<li><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+	
+	<!-- section --> 
+	   <div class="innerpage_banner">
+	      <div class="container">
+		     <div class="row"> 
+			    <div class="col-md-12">
+				   <h2>8051 MicroController</h2>
+				   <h3>8051 Interrupts</h3>
+				</div>
+			 </div>
+		  </div>
+	   </div>
+	<!-- end section -->
+
+    <!--div class="section layout_padding">
+       
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full center">
+                        <div class="heading_main text_align_center">
+                            <h2><span class="theme_color">Introduction to 8051 MicroController</span></h2>
+                            <p class="large"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+    </div>
+
+   <!-- section -->
+    <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+				<!--div class="col-md-12 white_fonts-->
+              <div class="coursebody">
+		<span id="detail_content" style="overflow-wrap: break-word;"><h1 id="header0"><strong>Introduction</strong></h1><p>An interrupt is an event that occurs randomly in the flow of continuity. It is just like a call you have when you are busy with some work and depending upon call priority you decide whether to attend or neglect it. &nbsp;</p><p>Same thing happens in microcontrollers. 8051 architecture handles 5 interrupt sources, out of which two are internal (Timer Interrupts), two are external and one is a serial interrupt. Each of these interrupts has their interrupt vector address. Highest priority interrupt is the Reset, with vector address 0x0000.</p><p><strong>Vector Address</strong>: This is the address where controller jumps after the interrupt to serve the ISR (interrupt service routine).</p><table align="center" border="1" cellspacing="0" cellpadding="0" style="width:417px"><thead><tr><th scope="col" style="height:31px; text-align:center; vertical-align:middle"><p>Interrupt</p></th><th scope="col" style="height:31px; text-align:center; vertical-align:middle; width:85px"><p>Flag</p></th><th scope="col" style="height:31px; text-align:center; vertical-align:middle; width:185px"><p>Interrupt vector address</p></th></tr></thead><tbody><tr><td style="height:16px; text-align:center; vertical-align:middle"><p>Reset</p></td><td style="height:16px; text-align:center; vertical-align:middle; width:85px"><p>-</p></td><td style="height:16px; text-align:center; vertical-align:middle; width:185px"><p>0000H</p></td></tr><tr><td style="height:16px; text-align:center; vertical-align:middle"><p>INT0 (Ext. int. 0)</p></td><td style="height:16px; text-align:center; vertical-align:middle; width:85px"><p>IE0</p></td><td style="height:16px; text-align:center; vertical-align:middle; width:185px"><p>0003H</p></td></tr><tr><td style="height:15px; text-align:center; vertical-align:middle"><p>Timer 0</p></td><td style="height:15px; text-align:center; vertical-align:middle; width:85px"><p>TF0</p></td><td style="height:15px; text-align:center; vertical-align:middle; width:185px"><p>000BH</p></td></tr><tr><td style="height:16px; text-align:center; vertical-align:middle"><p>INT1 (Ext. int. 1)</p></td><td style="height:16px; text-align:center; vertical-align:middle; width:85px"><p>IE1</p></td><td style="height:16px; text-align:center; vertical-align:middle; width:185px"><p>0013H</p></td></tr><tr><td style="height:15px; text-align:center; vertical-align:middle"><p>Timer 1</p></td><td style="height:15px; text-align:center; vertical-align:middle; width:85px"><p>TF1</p></td><td style="height:15px; text-align:center; vertical-align:middle; width:185px"><p>001BH</p></td></tr><tr><td style="height:16px; text-align:center; vertical-align:middle"><p>Serial</p></td><td style="height:16px; text-align:center; vertical-align:middle; width:85px"><p>TI/RI</p></td><td style="height:16px; text-align:center; vertical-align:middle; width:185px"><p>0023H</p></td></tr></tbody></table><p>&nbsp;</p><p><strong>Reset</strong></p><p>Reset is the highest priority interrupt, upon reset 8051 microcontroller start executing code from 0x0000 address.</p><p><strong>Internal interrupt (Timer Interrupt)</strong></p><p>8051 has two internal interrupts namely timer0 and timer1. Whenever timer overflows, timer overflow flags (TF0/TF1) are set. Then the microcontroller jumps to their vector address to serve the interrupt. For this, global and timer interrupt should be enabled.</p><p><strong>Serial interrupt</strong></p><p>8051 has serial communication port and have related serial interrupt flags (TI/RI). When the last bit (stop bit) of a byte is transmitted, TI serial interrupt flag is set and when last bit (stop bit) of receiving data byte is received, RI flag get set.</p><p><strong>IE register: Interrupt Enable Register</strong></p><p>IE register is used to enable/disable interrupt sources.</p><p>&nbsp; &nbsp; &nbsp;&nbsp;</p><p style="text-align:center"><img alt="8051 IE Register" src="cimage/8051/1_8051_IE_Register.PNG"></p><p><strong>Bit 7 – EA: </strong>Enable All Bit</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>1 = </strong>Enable all interrupts</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>0 = </strong>Disable all interrupts</p><p><strong>Bit 6,5 – </strong>Reserved bits</p><p><strong>Bit 4 – ES: </strong>Enable Serial Interrupt Bit</p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 = </strong>Enable serial interrupt</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>0 = </strong>Disable serial interrupt</p><p><strong>Bit 3 – ET1: </strong>Enable Timer1 Interrupt Bit</p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 = </strong>Enable Timer1 interrupt</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>0 = </strong>Disable Timer1 interrupt</p><p><strong>Bit 2 – EX1: </strong>Enable External1 Interrupt Bit</p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 = </strong>Enable External1 interrupt</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>0 = </strong>Disable External1 interrupt</p><p><strong>Bit 1 – ET0: </strong>Enable Timer0 Interrupt Bit</p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 = </strong>Enable Timer0 interrupt</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>0 = </strong>Disable Timer0 interrupt</p><p><strong>Bit 0 – EX0: </strong>Enable External0 Interrupt Bit</p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 = </strong>Enable External0 interrupt</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>0 = </strong>Disable External0 interrupt</p><p>&nbsp;</p><h1 id="header1"><strong>Interrupt priority</strong></h1><p>Priority to the interrupt can be assigned by using <strong>interrupt priority register (IP)</strong></p><p><strong>Interrupt priority after Reset:</strong></p><p>&nbsp;</p><table align="center" border="1" cellspacing="0" cellpadding="0" style="width:525px"><thead><tr><th scope="col" style="height:23px; text-align:center; vertical-align:middle; width:84px"><p><strong>Priority</strong></p></th><th scope="col" style="height:23px; text-align:center; vertical-align:middle; width:273px"><p><strong>Interrupt source</strong></p></th><th scope="col" style="height:23px; text-align:center; vertical-align:middle"><p><strong>Intr. bit / flag</strong></p></th></tr></thead><tbody><tr><td style="height:23px; text-align:center; vertical-align:middle; width:84px"><p>1</p></td><td style="height:23px; text-align:center; vertical-align:middle; width:273px"><p>External Interrupt 0</p></td><td style="height:23px; text-align:center; vertical-align:middle"><p>INT0</p></td></tr><tr><td style="height:24px; text-align:center; vertical-align:middle; width:84px"><p>2</p></td><td style="height:24px; text-align:center; vertical-align:middle; width:273px"><p>Timer Interrupt 0</p></td><td style="height:24px; text-align:center; vertical-align:middle"><p>TF0</p></td></tr><tr><td style="height:23px; text-align:center; vertical-align:middle; width:84px"><p>3</p></td><td style="height:23px; text-align:center; vertical-align:middle; width:273px"><p>External Interrupt 1</p></td><td style="height:23px; text-align:center; vertical-align:middle"><p>INT1</p></td></tr><tr><td style="height:24px; text-align:center; vertical-align:middle; width:84px"><p>4</p></td><td style="height:24px; text-align:center; vertical-align:middle; width:273px"><p>Timer Interrupt 1</p></td><td style="height:24px; text-align:center; vertical-align:middle"><p>TF1</p></td></tr><tr><td style="height:23px; text-align:center; vertical-align:middle; width:84px"><p>5</p></td><td style="height:23px; text-align:center; vertical-align:middle; width:273px"><p>Serial interrupt</p></td><td style="height:23px; text-align:center; vertical-align:middle"><p>(TI/RI)</p></td></tr></tbody></table><p>&nbsp;</p><p>In the table, interrupts priorities upon reset are shown. As per 8051 interrupt priorities, lowest priority interrupts are not served until microcontroller is finished with higher priority ones. In a case when two or more interrupts arrives microcontroller queues them according to priority.</p><p><strong>IP Register: Interrupt priority register</strong></p><p>8051 has interrupt priority register to assign priority to interrupts.&nbsp; &nbsp; &nbsp; &nbsp;</p><p style="text-align:center"><img alt="Interrupt Priority Register" src="cimage/8051/2_8051_IP_register.PNG"></p><p><strong>Bit 7,6,5 – </strong>Reserved bits.</p><p><strong>Bit 4 – PS: </strong>Serial Interrupt Priority Bit</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>1 = </strong>Assign high priority to serial interrupt.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>0 = </strong>Assign low priority to serial interrupt.</p><p><strong>Bit 3 – PT1: </strong>Timer1 Interrupt Priority Bit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1 = </strong>Assign high priority to Timer1 interrupt.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>0 = </strong>Assign low priority to Timer1 interrupt.</p><p><strong>Bit 2 – PX1: </strong>External Interrupt 1 Priority Bit&nbsp;&nbsp;&nbsp;&nbsp;</p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1 = </strong>Assign high priority to External1 interrupt.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>0 = </strong>Assign low priority to External1 interrupt.</p><p><strong>Bit 1 – PT0: </strong>Timer0 Interrupt Priority Bit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1 = </strong>Assign high priority to Timer0 interrupt.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>0 = </strong>Assign low priority to Timer0 interrupt.</p><p><strong>Bit 0 – PX0: </strong>External0 Interrupt Priority Bit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1 = </strong>Assign high priority to External0 interrupt.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>0 = </strong>Assign low priority to External0 interrupt.</p><p>&nbsp;</p><h1 id="header2"><strong>External interrupts in 8051</strong></h1><ul><li>8051 has two external interrupt INT0 and INT1.</li><li>8051 controller can be interrupted by external Interrupt, by providing level or edge on external interrupt pins PORT3.2, PORT3.3.</li><li>External peripherals can interrupt the microcontroller through these external interrupts if global and external interrupts are enabled.</li><li>Then the microcontroller will execute current instruction and jump to the Interrupt Service Routine (ISR) to serve to interrupt.</li><li>In polling method microcontroller has to continuously check for a pulse by monitoring pin, whereas, in interrupt method, the microcontroller does not need to poll. Whenever an interrupt occurs microcontroller serves the interrupt request.</li></ul><p>External interrupt has two types of activation level</p><ol><li>Edge triggered (Interrupt occur on rising/falling edge detection)</li><li>Level triggered (Interrupt occur on high/low-level detection)</li></ol><p>In 8051, two types of activation level are used. These are,</p><p>Low level triggered</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whenever a low level is detected on the INT0/INT1 pin while global and external interrupts are enabled, the controller jumps to interrupt service routine (ISR) to serve interrupt.</p><p>Falling edge triggered</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Whenever falling edge is detected on the INT0/INT1 pin while global and ext. interrupts are enabled, the controller jumps to interrupt service routine (ISR) to serve interrupt.</p><p>There are lower four flag bits in <strong>TCON register </strong>required to select and monitor the external interrupt type and ISR status.</p><p>&nbsp;</p><p><strong>TCON: Timer/ counter Register</strong></p><p><img alt="8051 TCON Register" src="cimage/8051/8051%20TCON%20Register.PNG"></p><p><strong>Bit 3- IE1:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></p><p>&nbsp; &nbsp; &nbsp; &nbsp;External Interrupt 1 edge flag, set by hardware when interrupt on INT1 pin occurred and cleared by hardware when interrupt get processed.</p><p><strong>Bit 2- IT1:</strong></p><p>&nbsp;This bit selects external interrupt event type on INT1 pin,</p><p>&nbsp; &nbsp; &nbsp; &nbsp;1= sets interrupt on falling edge</p><p>&nbsp; &nbsp; &nbsp; &nbsp;0= sets interrupt on low level</p><p><strong>Bit 1- IE0:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp; &nbsp; &nbsp; &nbsp;Interrupt0 edge flag, set by hardware when interrupt on INT0 pin occurred and cleared by hardware when an interrupt is processed.</p><p><strong>Bit 0 - IT0:</strong></p><p>This bit selects external interrupt event type on INT0 pin.</p><p>1= sets interrupt on falling edge</p><p>0= sets interrupt on low level</p><p>&nbsp;</p><h1 id="header3"><strong>Example</strong></h1><p>Let’s program the external interrupt of AT89C51 such that, when falling edge is detected on INT0 pin then the microcontroller will toggle the P1.0 pin.</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img alt="8051 Edge Triggered External interrupt" src="cimage/8051/3_8051_Edge_Triggered_Ext_int.PNG"></p><p>&nbsp;</p><p><strong>Programming steps</strong></p><ol><li>Enable global interrupt i.e. EA = 1</li><li>Enable external interrupt i.e. EX0 = 1</li><li>Enable interrupt trigger mode i.e. whether interrupt is edge triggered or level triggered, here we will use falling edge trigger interrupt, so make IT0 = 1.</li></ol><h1 id="header4"><strong>Program</strong></h1><pre><code class="language-c hljs cpp"><span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/*
+ * 8051_External_Interrupt
+ 
+ */</span></span></span>
+
+<span class="hljs-meta"><span class="hljs-meta"><span class="hljs-meta">#</span></span><span class="hljs-meta-keyword"><span class="hljs-meta"><span class="hljs-meta-keyword"><span class="hljs-meta"><span class="hljs-meta-keyword">include</span></span></span></span></span><span class="hljs-meta"><span class="hljs-meta"> </span></span><span class="hljs-meta-string"><span class="hljs-meta"><span class="hljs-meta-string"><span class="hljs-meta"><span class="hljs-meta-string">&lt;reg51.h&gt;	/* Include x51 header file */</span></span></span></span></span></span>
+sbit LED = P1^<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;	<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* set LED on port1 */</span></span></span> 
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">Ext_int_Init</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">				
+</span></span></span>{
+	EA  = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;	<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Enable global interrupt */</span></span></span>
+	EX0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;      	<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Enable Ext. interrupt0 */</span></span></span>
+	IT0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;      	<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Select Ext. interrupt0 on falling edge */</span></span></span>
+}
+											
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">External0_ISR</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> interrupt 0
+</span></span></span>{
+	LED = ~LED;	<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Toggle pin on falling edge on INT0 pin */</span></span></span>
+} 
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">main</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	Ext_int_Init(); <span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Call Ext. interrupt initialize */</span></span></span>
+	<span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">while</span></span></span>(<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>);
+}
+</code></pre><div style="clear:both">&nbsp;</div><div style="clear:both"><p>Note: For <strong>level triggered interrupt </strong>IT0 needs to be cleared i.e. IT0 = 0.</p>&nbsp;<p>&nbsp;</p></div></span></div>
+</div>
+		   </div>
+        </div>
+    </div>
+    <!-- end section -->
+    
+   <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full center">
+                        <div class="heading_main text_align_center">
+                            <h2></h2>
+                            <p class="large"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Footer -->
+    <footer class="footer-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/footer_logo.png" alt="#" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-12 white_fonts">
+                    <h4 class="text-align">Contact Us</h4>
+                </div>
+                <div class="margin-top_30 col-md-8 offset-md-2 white_fonts">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="full icon text_align_center">
+                                <img src="images/social1.png">
+                            </div>
+                            <div class="full white_fonts text_align_center">
+                                <p>Karnataka, INDIA
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="full icon text_align_center">
+                                <img src="images/social2.png">
+                            </div>
+                            <div class="full white_fonts text_align_center">
+                                <p>sanskrithitechnology@gmail.com
+                                    </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="row white_fonts margin-top_30">
+                <div class="col-lg-12">
+                    <div class="full">
+                        <div class="center">
+                            <ul class="social_icon">
+                                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="crp">© 2019 Sanskrithi Technology . All Rights Reserved.</p>
+                    <ul class="bottom_menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="termofservice.html">Terms of Service</a></li>
+                        <li><a href="Privacypolicy.html">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script>
+    <script src="js/slider-index.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

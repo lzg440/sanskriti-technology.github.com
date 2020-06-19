@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Sanskrithi Technology - courses</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="about_us" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/loader.gif" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-header">
+        <nav class="navbar header-nav navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="index.html">Home</a></li>  
+                        <li><a class="nav-link" href="course.html">courses</a></li>
+						<li><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li><a class="nav-link" href="#">About us</a></li>
+						<li><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+	
+	<!-- section --> 
+	   <div class="innerpage_banner">
+	      <div class="container">
+		     <div class="row"> 
+			    <div class="col-md-12">
+				   <h2>8051 MicroController</h2>
+				   <h3>8051 Timers</h3>
+				</div>
+			 </div>
+			 
+		  </div>
+	   </div>
+	<!-- end section -->
+
+    <!--div class="section layout_padding">
+       
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full center">
+                        <div class="heading_main text_align_center">
+                            <h2><span class="theme_color">Introduction to 8051 MicroController</span></h2>
+                            <p class="large"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+    </div>
+
+   <!-- section -->
+    <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+				<!--div class="col-md-12 white_fonts-->
+              <div class="coursebody">
+			<div><span id="detail_content" style="overflow-wrap: break-word;"><h1 id="header0"><strong>Introduction</strong></h1><p>8051 microcontrollers have two timers/counters which work on the clock frequency.&nbsp;Timer/counter can be used for time delay generation, counting external events etc.</p><h1 id="header1"><strong>Clock&nbsp;</strong></h1><p>Every Timer needs a clock to work, and 8051 provides it from an external crystal which is the main clock source for Timer. The internal circuitry in the 8051 microcontrollers provides a clock source to the timers which is 1/12th of the frequency of crystal attached to the microcontroller, also called as Machine cycle frequency.</p><p>&nbsp;</p><p style="text-align:center"><img alt="8051 Timer Clock" src="cimage/8051/Clock.PNG"></p><p style="text-align:center"><strong>8051 Timer Clock</strong></p><p>For example, suppose we have crystal frequency of 11.0592 MHz then microcontroller will provide 1/12th i.e.</p><p>
+			
+	 Timer clock frequency= &nbsp;(Xtal Osc.frequency)/12 &nbsp;= &nbsp;(11.0592 MHz)/12 &nbsp;=&nbsp;921.6 KHz</p><p>&nbsp;period T= &nbsp;1/(921.6 KHz)=1.085 μS</p><h1 id="header2"><strong>Timer</strong></h1><p>8051 has two timers Timer0 (T0) and Timer1 (T1), both are 16-bit wide. Since 8051 has 8-bit architecture, each of these is accessed by two separate 8-bit registers as shown in the figure below. These registers are used to load timer count.</p><p style="text-align:center"><img alt="8051 Timer Registers" src="cimage/8051/2_8051_Timer_Registers.PNG"></p><p>&nbsp;</p><p>8051 has Timer Mode Register and Timer Control Register for selecting a mode of operation and controlling purpose.</p><p>Let's see these registers,</p><p><strong>TMOD register </strong></p><p>TMOD is an 8-bit register used to set timer mode of timer0 and timer1.</p><p style="text-align:center"><img alt="8051 TMOD Register" src="cimage/8051/3_8051_TMOD_Register.JPG"></p><p>Its lower 4 bits are used for Timer0 and upper 4 bits are used for Timer1</p><p><strong>Bit 7,3 – GATE: </strong></p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1</strong> = Enable Timer/Counter only when the INT0/INT1 pin is high and TR0/TR1 is set.</p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0</strong> = Enable Timer/Counter when TR0/TR1 is set.</p><p><strong>Bit 6,2 - C/<img alt="\bar{T}" src="http://latex.codecogs.com/gif.latex?%5Cbar%7BT%7D">(Counter/Timer): </strong>Timer or Counter select bit</p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1</strong> = Use as Counter</p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;0</strong> = Use as Timer</p><p><strong>Bit 5:4 &amp; 1:0 - M1:M0: </strong>Timer/Counter mode select bit</p><p>These are Timer/Counter mode select bit as per below table</p><table align="center" border="1" cellspacing="0" cellpadding="0"><thead><tr><th scope="col" style="text-align:center; vertical-align:middle; width:35px"><p><strong>M1</strong></p></th><th scope="col" style="text-align:center; vertical-align:middle; width:35px"><p><strong>M0</strong></p></th><th scope="col" style="text-align:center; vertical-align:middle; width:186px"><p><strong>Mode</strong></p></th><th scope="col" style="text-align:center; vertical-align:middle; width:346px"><p><strong>Operation</strong></p></th></tr></thead><tbody><tr><td style="text-align:center; vertical-align:middle"><p>0</p></td><td style="text-align:center; vertical-align:middle"><p>0</p></td><td style="text-align:center; vertical-align:middle; width:186px"><p>0 (13-bit timer mode)</p></td><td style="text-align:center; vertical-align:middle; width:346px"><p>13-bit timer/counter, 8-bit of THx &amp; 5-bit of TLx</p></td></tr><tr><td style="text-align:center; vertical-align:middle"><p>0</p></td><td style="text-align:center; vertical-align:middle"><p>1</p></td><td style="text-align:center; vertical-align:middle; width:186px"><p>1 (16-bit timer mode)</p></td><td style="text-align:center; vertical-align:middle; width:346px"><p>16-bit timer/counter, THx cascaded with TLx</p></td></tr><tr><td style="text-align:center; vertical-align:middle"><p>1</p></td><td style="text-align:center; vertical-align:middle"><p>0</p></td><td style="text-align:center; vertical-align:middle; width:186px"><p>2 (8-bit auto reload mode)</p></td><td style="text-align:center; vertical-align:middle; width:346px"><p>8-bit timer/counter (auto reload mode), TLx reload with value held by THx each time TLx overflow</p></td></tr><tr><td style="text-align:center; vertical-align:middle"><p>1</p></td><td style="text-align:center; vertical-align:middle"><p>1</p></td><td style="text-align:center; vertical-align:middle; width:186px"><p>3 (split timer mode)</p></td><td style="text-align:center; vertical-align:middle; width:346px"><p>Split 16-bit timerx into two 8-bit timer i.e. THx and TLx like two 8-bit timer</p></td></tr></tbody></table><div style="clear:both">&nbsp;</div><p>&nbsp;</p><p><strong>TCON Register</strong></p><p style="text-align:center"><strong><img alt="8051 TCON Register" src="cimage/8051/4_8051_TCON_Register.PNG"></strong></p><p>TCON is 8-bit control register and contains timer and interrupt flags.</p><p><strong>Bit 7 - TF1: </strong>Timer1 Overflow Flag</p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; 1</strong> = Timer1 overflow occurred (i.e. Timer1 goes to its max and roll over back to zero).</p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; 0</strong> = Timer1 overflow not occurred.</p><p>It is cleared through software. In Timer1 overflow interrupt service routine, this bit will get cleared automatically while exiting from ISR.</p><p><strong>Bit 6 - TR1: </strong>Timer1 Run Control Bit</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1</strong> = Timer1 start.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>0</strong> = Timer1 stop.</p><p>It is set and cleared by software.</p><p><strong>Bit 5 – TF0: </strong>Timer0 Overflow Flag</p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;1</strong> = Timer0 overflow occurred (i.e. Timer0 goes to its max and roll over back to zero).</p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0</strong> = Timer0 overflow not occurred.</p><p>It is cleared through software. In Timer0 overflow interrupt service routine, this bit will get cleared automatically while exiting from ISR.</p><p><strong>Bit 4 – TR0: </strong>Timer0 Run Control Bit</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>1</strong> = Timer0 start.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>0</strong> = Timer0 stop.</p><p>It is set and cleared by software.</p><p><strong>Bit 3 - IE1: </strong>External Interrupt1 Edge Flag</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>1 </strong>= External interrupt1 occurred.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>0</strong> = External interrupt1 Processed.</p><p>It is set and cleared by hardware.</p><p><strong>Bit 2 - IT1: </strong>External Interrupt1 Trigger Type Select Bit</p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1 = </strong>Interrupt occur on falling edge at INT1 pin.</p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;0 = </strong>Interrupt occur on low level at INT1 pin.</p><p><strong>Bit 1 – IE0: </strong>External Interrupt0 Edge Flag</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>1 </strong>= External interrupt0 occurred.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>0</strong> = External interrupt0 Processed.</p><p>It is set and cleared by hardware.</p><p><strong>Bit 0 – IT0: </strong>External Interrupt0 Trigger Type Select Bit</p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1 = </strong>Interrupt occur on falling edge at INT0 pin.</p><p><strong>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 0 = </strong>Interrupt occur on low level at INT0 pin.</p><p>&nbsp;</p><p>Let's see the timers modes</p><p><strong>Timer Modes</strong></p><p>Timers have their operation modes which are selected in TMOD register using M0 &amp; M1 bit combinations.</p><h1 id="header3"><strong>Mode 0 (13-bit timer mode)</strong></h1><p>Mode 0 is 13-bit timer mode for which 8-bit of THx and 5-bit of TLx (as Prescaler) are used. It is mostly used for interfacing possible with old MCS-48 family microcontrollers.</p><p style="text-align:center"><img alt="8051 Timer Mode0" src="cimage/8051/5_8051_Timer_Mode0.PNG"></p><p>&nbsp;</p><p>As shown in above figure, 8-bit of THx and lower 5-bit of TLx used to form a total 13-bit timer. Higher 3-bits of TLx should be written as zero while using timer mode0, or it will affect the result.</p><p>&nbsp;</p><p><strong>Example</strong></p><p>Let's generate a square wave of 2mSec period using an AT89C51 microcontroller with timer0 in mode0 on P1.0 pin of port1. Assume xtal oscillator frequency of 11.0592 MHz.</p><p style="text-align:center"><img alt="8051 Mode0 Example Wave" src="cimage/8051/8051_Mode0_Example_Wave.PNG"></p><p>&nbsp;</p><p>As Xtal oscillator frequency is 11.0592 MHz we have machine cycle of 1.085uSec. Hence, required count to generate delay of 1mSec. is,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Count =(1×10^-3)/(1.085×10^-6)&nbsp;≈ 921</p><p>Maximum count of Mode0 is 2^13 (0 - 8191) and Timer0 count will increment from 0 – 8191. So we need to load value which is 921 less from its maximum count i.e. 8191. Also, here in the below program, we need additional 13 MC (machine cycles) from call to return of delay function. Hence value needed to be loaded is,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Value=(8191-Count)+Function_MCycles+1 =7284= 0x1C74</p><p>So we need to load 0x1C74 value in Timer0.</p><p>1C74 = 000<strong>1 1100 0111 0100 </strong>b, now load lower 5-bit in TL0 and next 8-bit in TH0</p><p>so here we get,</p><p>TL0 = 000<strong>1 0100</strong> = 0x14 and TH0 = 1110 0011 = 0xE3</p><p>&nbsp;</p><h1 id="header4"><strong>Programming steps for delay function</strong></h1><ol><li>Load Tmod register value i.e. TMOD = 0x00 for Timer0/1 mode0 (13-bit timer mode).</li><li>Load calculated THx value i.e. here TH0 = 0xE3.</li><li>Load calculated TLx value i.e. here TL0 = 0x14.</li><li>Start timer by setting TRx bit. i.e. here TR0 = 1.</li><li>Poll TFx flag till it does not get set.</li><li>Stop timer by clearing TRx bit. i.e. here TR0 = 0.</li><li>Clear timer flag TFx bit i.e. here TF0 = 0.</li><li>Repeat from step 1 to 7 for delay again.</li></ol><h1 id="header5"><strong>Program for timer mode0</strong></h1><pre><code class="language-c hljs cpp"><span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/*
+ * 8051_Timer_Mode0
+ 
+ */</span></span></span>
+<span class="hljs-meta"><span class="hljs-meta"><span class="hljs-meta">#</span></span><span class="hljs-meta-keyword"><span class="hljs-meta"><span class="hljs-meta-keyword"><span class="hljs-meta"><span class="hljs-meta-keyword">include</span></span></span></span></span><span class="hljs-meta"><span class="hljs-meta"> </span></span><span class="hljs-meta-string"><span class="hljs-meta"><span class="hljs-meta-string"><span class="hljs-meta"><span class="hljs-meta-string">&lt;reg51.h&gt;			/* Include x51 header file */</span></span></span></span></span></span>
+sbit test = P1^<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;			<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* set test pin 0 of port1 */</span></span></span> 
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">timer_delay</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">			</span></span><span class="hljs-comment"><span class="hljs-function"><span class="hljs-comment"><span class="hljs-function"><span class="hljs-comment">/* Timer0 delay function */</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	TH0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0xE3</span></span></span>;			<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Load 8-bit in TH0 (here Timer0 used) */</span></span></span>
+	TL0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x14</span></span></span>;			<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Load 5-bit in TL0 */</span></span></span>
+	TR0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;			<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Start timer0 */</span></span></span>
+	<span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">while</span></span></span>(TF0 == <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>);		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Wait until timer0 flag set */</span></span></span>
+	TR0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;			<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Stop timer0 */</span></span></span>
+	TF0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;			<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Clear timer0 flag */</span></span></span>
+}
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">main</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	TMOD = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x00</span></span></span>;			<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Timer0/1 mode0 (13-bit timer mode) */</span></span></span>
+	<span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">while</span></span></span>(<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>)
+	{
+		test = ~test;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Toggle test pin */</span></span></span>
+		timer_delay();		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Call timer0 delay */</span></span></span>
+	}
+}
+</code></pre><p>&nbsp;</p><h1 id="header6"><strong>Mode1 (16-bit timer mode)</strong></h1><p>Mode 1 is 16-bit timer mode used to generate a delay, it uses 8-bit of THx and 8-bit of TLx to form a total 16-bit register.</p><p style="text-align:center"><img alt="8051 Timer Mode1" src="cimage/8051/7_8051_Timer_Mode1.PNG"></p><p>&nbsp;</p><p><strong>Example</strong></p><p>Let’s generate a square wave of 2mSec time period using an AT89C51 microcontroller with timer0 in mode1 on P1.0 pin of port1. Assume Xtal oscillator frequency of 11.0592 MHz.</p><p style="text-align:center">&nbsp;&nbsp;</p><p style="text-align:center"><img alt="8051 Mode1 Example Wave" src="cimage/8051/8051_Mode0_Example_Wave.PNG"></p><p>As Xtal is 11.0592 MHz we have machine cycle of 1.085uSec.</p><p>Hence, required count to generate delay of 1mSec. is,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Count =(1×10^(-3)) / (1.085×10^(-6) ) ≈ 921&nbsp;</p><p>And mode1 has max count is 2^16 (0 - 65535) and it increment from 0 to 65535 so we need to load value which is 921 less from its max. count i.e. 65535. Also, here in the below program, we need additional 13 MC (machine cycles) from call to return of delay function. Hence value needed to be loaded is,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Value=(65535-Count)+Function_MCycles+1 =64615= (FC74)Hex</p><p>So we need to load FC74 Hex value higher byte in TH0 and lower byte in TL0 as,</p><p>TH0 = 0xFC &amp; TL0 = 0x74</p><p>&nbsp;</p><h1 id="header7"><strong>Programming steps for delay function</strong></h1><ol><li>Load Tmod register value i.e. TMOD = 0x01 for Timer0 mode1 (16-bit timer mode).</li><li>Load calculated THx value i.e. here TH0 = 0xFC.</li><li>Load calculated TLx value i.e. here TL0 = 0x74.</li><li>Start timer by setting TRx bit. i.e. here TR0 = 1.</li><li>Poll TFx flag till it does not get set.</li><li>Stop timer by clearing TRx bit. i.e. here TR0 = 0.</li><li>Clear timer flag TFx bit i.e. here TF0 = 0.</li><li>Repeat from step 1 to 7 for delay again.</li></ol><p>&nbsp;</p><h1 id="header8"><strong>Program for timer mode1</strong></h1><pre><code class="language-c hljs cpp"><span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/*
+ * 8051_Timer_Mode1
+ 
+ */</span></span></span>
+<span class="hljs-meta"><span class="hljs-meta"><span class="hljs-meta">#</span></span><span class="hljs-meta-keyword"><span class="hljs-meta"><span class="hljs-meta-keyword"><span class="hljs-meta"><span class="hljs-meta-keyword">include</span></span></span></span></span><span class="hljs-meta"><span class="hljs-meta"> </span></span><span class="hljs-meta-string"><span class="hljs-meta"><span class="hljs-meta-string"><span class="hljs-meta"><span class="hljs-meta-string">&lt;reg51.h&gt;		/* Include x51 header file */</span></span></span></span></span></span>
+sbit test = P1^<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* set test pin0 of port1 */</span></span></span> 
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">timer_delay</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">		</span></span><span class="hljs-comment"><span class="hljs-function"><span class="hljs-comment"><span class="hljs-function"><span class="hljs-comment">/* Timer0 delay function */</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	TH0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0xFC</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Load higher 8-bit in TH0 */</span></span></span>
+	TL0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x74</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Load lower 8-bit in TL0 */</span></span></span>
+	TR0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Start timer0 */</span></span></span>
+	<span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">while</span></span></span>(TF0 == <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>);	<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Wait until timer0 flag set */</span></span></span>
+	TR0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Stop timer0 */</span></span></span>
+	TF0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Clear timer0 flag */</span></span></span>
+}
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">main</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	TMOD = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x01</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Timer0 mode1 (16-bit timer mode) */</span></span></span>
+	<span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">while</span></span></span>(<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>)
+	{
+		test = ~test;	<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Toggle test pin */</span></span></span>
+		timer_delay();	<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Call timer0 delay */</span></span></span>
+	}
+}
+</code></pre><p>&nbsp;</p><h1 id="header9"><strong>Mode2 (8-bit auto-reload timer mode)</strong></h1><p>Mode 2 is 8-bit auto-reload timer mode. In this mode we have to load the THx-8 bit value only. when the Timer gets started, THx value gets automatically loded into the TLx and TLx start counting from that value. After the value of TLx overflows from the 0xFF to 0x0, the TFx flag gets set and again value from the THx gets automatically loaded into the TLx register. That’s why this is called as auto reload mode.</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p><p style="text-align:center"><img alt="8051 Timer Mode2 Auto Reload" src="cimage/8051/8051%20timer%20autoreload%20mode.PNG"></p><p>&nbsp;</p><p><strong>Example</strong></p><p>Here we are generating a square wave on PORT1.0 with 200uSec. time period using Timer1 in mode2. We will use 11.0592 MHz Xtal oscillator frequency.</p><p style="text-align:center"><img alt="8051 Mode2 Example Wave" src="cimage/8051/8051_Mode2_Example_Wave.PNG"></p><p>As Xtal is 11.0592 MHz we have machine cycle of 1.085uSec. Hence, required count to generate delay of 1mSec. is,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Count =(100×10^(-6)) / (1.085×10^(-6) )≈92&nbsp;</p><p>And mode2 has max count is 2^8 (0 - 255) and it increment from 0 – 255 so we need to load value which is 92 less from its max. count i.e. 255. Hence value need to be load is,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Value=(255-Count)+1 =164= 0xA4</p><p>So we need to load A4 Hex value in higher byte as,</p><p>TH1 = 0xA4</p><p>&nbsp;</p><h1 id="header10"><strong>Programming steps for delay function</strong></h1><ol><li>Load Tmod register value i.e. TMOD = 0x20 for Timer1 mode2 (8-bit timer auto reload mode).</li><li>Load calculated THx value i.e. here TH1 = 0xA4.</li><li>Load same value for TLx i.e. here TL1 = 0xA4.</li><li>Start timer by setting TRx bit. i.e. here TR1 = 1.</li><li>Poll TFx flag till it does not get set.</li><li>Clear timer flag TFx bit i.e. here TF1 = 0.</li><li>Repeat from step 5 and 6 for delay again.</li></ol><p>&nbsp;</p><h1 id="header11"><strong>Program for timer mode2</strong></h1><pre><code class="language-c language-cpp hljs"><span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/*
+ * 8051_Timer_Mode2
+ 
+ */</span></span></span>
+<span class="hljs-meta"><span class="hljs-meta"><span class="hljs-meta">#</span></span><span class="hljs-meta-keyword"><span class="hljs-meta"><span class="hljs-meta-keyword"><span class="hljs-meta"><span class="hljs-meta-keyword">include</span></span></span></span></span><span class="hljs-meta"><span class="hljs-meta"> </span></span><span class="hljs-meta-string"><span class="hljs-meta"><span class="hljs-meta-string"><span class="hljs-meta"><span class="hljs-meta-string">&lt;reg51.h&gt;			/* Include x51 header file */</span></span></span></span></span></span>
+sbit test = P1^<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;			<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* set test pin0 of port1 */</span></span></span> 
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">main</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	TMOD = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x20</span></span></span>;			<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Timer1 mode2 (8-bit auto reload timer mode) */</span></span></span>
+	TH1 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0xA4</span></span></span>;			<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Load 8-bit in TH1 */</span></span></span>
+	TL1 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0xA4</span></span></span>;			<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Load 8-bit in TL1 once */</span></span></span>
+	TR1 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;			<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Start timer1 */</span></span></span>
+	<span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">while</span></span></span>(<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>)
+	{
+		test = ~test;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Toggle test pin */</span></span></span>
+		<span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">while</span></span></span>(TF1 == <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>);	<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Wait until timer1 flag set */</span></span></span>
+		TF1 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Clear timer1 flag */</span></span></span>
+	}
+}
+</code></pre><p>&nbsp;</p><h1 id="header12"><strong>Timer interrupt in 8051</strong></h1><p>8051 has two timer interrupts assigned with different vector address. When Timer count rolls over from its max value to 0, it sets timer flag TFx. This will interrupt the 8051 microcontroller to serve ISR (interrupt service routine) if global and timer interrupt is enabled.</p><table align="center" border="1" cellspacing="0" cellpadding="0" style="width:307px"><thead><tr><th scope="col" style="height:21px; text-align:center; vertical-align:middle"><p>Interrupt source</p></th><th scope="col" style="height:21px; text-align:center; vertical-align:middle"><p>Vector address</p></th></tr></thead><tbody><tr><td style="height:20px; text-align:center; vertical-align:middle"><p>Timer 0 overflow (TF0)</p></td><td style="height:20px; text-align:center; vertical-align:middle"><p>000BH</p></td></tr><tr><td style="height:20px; text-align:center; vertical-align:middle"><p>Timer 1 overflow (TF1)</p></td><td style="height:20px; text-align:center; vertical-align:middle"><p>001BH</p></td></tr></tbody></table><p>&nbsp;</p><p>Timer overflow interrupt assigned with vector address shown in the table. 8051 microcontroller jumps directly to the vector address on the occurrence of a corrosponding interrupt.</p><p>&nbsp;</p><p style="text-align:center"><img alt="8051 Timer Interrupt" src="cimage/8051/Timer%20interrupt.PNG"></p><p>&nbsp;</p><p><strong>Example</strong></p><p>Here we will generate a square wave of 10Hz on PORT1.0 using Timer0 interrupt. We will use Timer0 in mode1 with 11.0592 MHz oscillator frequency.</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p><p style="text-align:center"><img alt="8051 Timer Interrupt Example Wave" src="cimage/8051/8051_Timer_Interrupt_Example_Wave.PNG"></p><p>As Xtal is 11.0592 MHz we have machine cycle of 1.085uSec. Hence, required count to generate a delay of 50mSec. is,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Count =(50×10^(-3)) / (1.085×10^(-6) ) ≈ 46080&nbsp;</p><p>And mode1 has max count is 2^16 (0 - 65535) and it increment from 0 – 65535 so we need to load value which is 46080 less from its max. count i.e. 65535. Hence value need to be load is,</p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Value=(65535-Count)+1 =19456= (4C00)Hex</p><p>So we need to load 4C00 Hex value in higher byte and lower byte as,</p><p>TH0 = 0x4C &amp; TL0 = 0x00</p><p>Note that TF0 flag no need to clear by software as microcontroller clears it after completing ISR routine.</p><p>&nbsp; <strong>Program for timer interrupt</strong></p><pre><code class="language-c hljs cpp"><span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment"></span></span></span>
+<span class="hljs-meta"><span class="hljs-meta"><span class="hljs-meta">#</span></span><span class="hljs-meta-keyword"><span class="hljs-meta"><span class="hljs-meta-keyword"><span class="hljs-meta"><span class="hljs-meta-keyword">include</span></span></span></span></span><span class="hljs-meta-string"><span class="hljs-meta"><span class="hljs-meta-string"><span class="hljs-meta"><span class="hljs-meta-string">&lt;reg51.h&gt;		/* Include x51 header file */</span></span></span></span></span></span>
+sbit test = P1^<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* set test pin0 of port1 */</span></span></span>
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">Timer_init</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	TMOD = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x01</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Timer0 mode1 */</span></span></span>
+	TH0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x4C</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* 50ms timer value */</span></span></span>
+	TL0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x00</span></span></span>;      
+	TR0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;  	      	<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Start timer0 */</span></span></span>
+}
+
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">Timer0_ISR</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> interrupt 1	</span></span><span class="hljs-comment"><span class="hljs-function"><span class="hljs-comment"><span class="hljs-function"><span class="hljs-comment">/* Timer0 interrupt service routine (ISR) */</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	test = ~test;  		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Toggle port pin */</span></span></span>
+	TH0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x4C</span></span></span>;      	<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* 50ms timer value */</span></span></span>
+	TL0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x00</span></span></span>;      
+}
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">int</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">main</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">(</span></span></span></span><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-params"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-params"><span class="hljs-keyword">void</span></span></span></span></span></span></span><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">)</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	EA  = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;         	<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Enable global interrupt */</span></span></span>
+	ET0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;         	<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Enable timer0 interrupt */</span></span></span>
+	Timer_init();
+  	<span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">while</span></span></span>(<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>);
+}
+</code></pre><p>&nbsp;</p>
+</span></div>
+</div>
+		   </div>
+        </div>
+    </div>
+    <!-- end section -->
+    
+   <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full center">
+                        <div class="heading_main text_align_center">
+                            <h2></h2>
+                            <p class="large"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Footer -->
+    <footer class="footer-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/footer_logo.png" alt="#" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-12 white_fonts">
+                    <h4 class="text-align">Contact Us</h4>
+                </div>
+                <div class="margin-top_30 col-md-8 offset-md-2 white_fonts">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="full icon text_align_center">
+                                <img src="images/social1.png">
+                            </div>
+                            <div class="full white_fonts text_align_center">
+                                <p>Karnataka, INDIA
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="full icon text_align_center">
+                                <img src="images/social2.png">
+                            </div>
+                            <div class="full white_fonts text_align_center">
+                                <p>sanskrithitechnology@gmail.com
+                                    </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="row white_fonts margin-top_30">
+                <div class="col-lg-12">
+                    <div class="full">
+                        <div class="center">
+                            <ul class="social_icon">
+                                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="crp">© 2019 Sanskrithi Technology . All Rights Reserved.</p>
+                    <ul class="bottom_menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="termofservice.html">Terms of Service</a></li>
+                        <li><a href="Privacypolicy.html">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script>
+    <script src="js/slider-index.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

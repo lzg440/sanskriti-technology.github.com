@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Sanskrithi Technology - courses</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="about_us" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/loader.gif" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-header">
+        <nav class="navbar header-nav navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="index.html">Home</a></li>  
+                        <li><a class="nav-link" href="course.html">courses</a></li>
+						<li><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li><a class="nav-link" href="#">About us</a></li>
+						<li><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+	
+	<!-- section --> 
+	   <div class="innerpage_banner">
+	      <div class="container">
+		     <div class="row"> 
+			    <div class="col-md-12">
+				   <h2>8051 MicroController</h2>
+				   <h3>8051 Power down and Idle mode</h3>
+				</div>
+			 </div>
+		  </div>
+	   </div>
+	<!-- end section -->
+
+    <!--div class="section layout_padding">
+       
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full center">
+                        <div class="heading_main text_align_center">
+                            <h2><span class="theme_color">Introduction to 8051 MicroController</span></h2>
+                            <p class="large"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+    </div>
+
+   <!-- section -->
+    <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+				<!--div class="col-md-12 white_fonts-->
+              <div class="coursebody">
+			 <span id="detail_content" style="overflow-wrap: break-word;"><h1 id="header0"><strong>Introduction</strong></h1><p>Power down and Idle mode features are used to save power in microcontrollers. 8051 has inbuilt power saving feature which is useful in embedded applications where power consumption is main constraint.</p></p><p style="text-align:center"><strong>8051 Power Control Logic</strong></p><p>8051 has two power saving mode,</p><ul><li>Power Down Mode</li><li>Idle Mode</li></ul><p>&nbsp;</p><h1 id="header1"><strong>Difference Between Power Down &amp; Idle Mode</strong></h1><p>As shown in above figure of 8051 power control logic, two control bits are there, IDL and PD, which are used for Idle and Power down mode respectively.</p><p>In <strong>Power Down </strong>mode, the oscillator clock provided to system is OFF i.e. CPU and peripherals clock remains inactive in this mode.</p><p>In <strong>Idle </strong>Mode, only the clock provided to CPU gets deactivated ,whereas peripherals clock will remain active in this mode.</p><p>Hence power saved in power down mode is more than in idle mode.</p><p>Below table shows power supply current required to 8051 family controllers in Normal (Active), Idle and Power down mode.</p><table align="center" border="1" cellspacing="0" cellpadding="0"><thead><tr><th scope="col" style="text-align:center; vertical-align:middle; width:100px"><p><strong>8051 Controllers</strong></p></th><th scope="col" style="text-align:center; vertical-align:middle"><p><strong>Operating Oscillator Frequency</strong></p><p><strong>Fosc.</strong></p></th><th scope="col" style="text-align:center; vertical-align:middle"><p><strong>Current required in Normal mode</strong></p></th><th scope="col" style="text-align:center; vertical-align:middle"><p><strong>Current required in Idle mode</strong></p></th><th scope="col" style="text-align:center; vertical-align:middle"><p><strong>Current required in Power Down mode</strong></p></th></tr></thead><tbody><tr><td style="text-align:center; vertical-align:middle"><p>AT89S51</p></td><td style="text-align:center; vertical-align:middle"><p>12 MHz</p></td><td style="text-align:center; vertical-align:middle"><p>25mA</p></td><td style="text-align:center; vertical-align:middle"><p>6.5mA</p></td><td style="text-align:center; vertical-align:middle"><p>50uA</p></td></tr><tr><td style="text-align:center; vertical-align:middle"><p>P89V51RD2</p></td><td style="text-align:center; vertical-align:middle"><p>12 MHz</p></td><td style="text-align:center; vertical-align:middle"><p>11.5mA</p></td><td style="text-align:center; vertical-align:middle"><p>8.5mA</p></td><td style="text-align:center; vertical-align:middle"><p>80-90uA</p></td></tr><tr><td style="text-align:center; vertical-align:middle"><p>DS80C323</p></td><td style="text-align:center; vertical-align:middle"><p>18 MHz</p></td><td style="text-align:center; vertical-align:middle"><p>10mA</p></td><td style="text-align:center; vertical-align:middle"><p>6mA</p></td><td style="text-align:center; vertical-align:middle"><p>0.1uA for BGR enabled.</p><p>40uA for BGR disabled.</p></td></tr></tbody></table><p>&nbsp;</p><p>As per above table it is clear that power consumption in power down mode is less than in Normal or idle mode.</p><p>8051 has power control register for power control. Let's see power control register.</p><p><strong>PCON Register: Power control register</strong></p><p>PCON (Power control) register is used to force the 8051 microcontroller into power saving mode. Power control register of 8051 contains two power saving mode bits and one serial baud rate control bit.</p><p><img alt="8051 PCON Register" src="cimage/8051/2_8051_PCON_Register.PNG"></p><p><strong>Bit 7 – SMOD</strong></p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 = </strong>Baud rate is doubled in UART mode 1, 2 and 3.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>0 = </strong>No effect on Baud rate.</p><p><strong>Bit 3:2 – GF1 &amp; GF0:</strong></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; These are general purpose bit for user.</p><p><strong>Bit 1 – PD: </strong>Power Down</p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1</strong> = Enable Power Down mode. In this mode, Oscillator clock turned OFF and both CPU and peripherals clock stopped. Hardware reset can cancel this mode.</p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0</strong> = Disable Power down mode.</p><p><strong>Bit 0 – IDL: </strong>Idle</p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1</strong> = Enable Idle mode. CPU clock turned off whereas internal peripheral module such as timer, serial port, interrupts works normally. Interrupt and H/W reset can cancel this mode.</p><p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0</strong> = Disable Idle mode.</p><p>&nbsp;</p><h1 id="header2"><strong>Example</strong></h1><p>Let’s program AT89C51 microcontroller to toggle Pin 0 of port 1 and force microcontroller in Idle (sleep) mode by external interrupt1. We wake the microcontroller in normal mode by external interrupt0.</p><p>&nbsp;</p><h1 id="header3"><strong>Programming steps</strong></h1><ol><li>Enable global and external0 and external1 interrupt. EA = 1, EXx = 1.</li><li>Select interrupt type i.e. here interrupt on falling edge is selected ITx = 0.</li><li>Set priority for interrupt if required through the IP register.</li><li>Controller sleep mode can also be cancelled by reset pin.</li><li>Enable and disable idle (sleep) mode through PCON register.</li></ol><p>Here, sleep mode is enabled in external1 interrupt ISR and disabled in external0 interrupt ISR.</p><p>&nbsp;</p><h1 id="header4"><strong>Program for Idle (sleep) mode</strong></h1><pre><code class="language-c hljs cpp"><span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment"></span></span></span>
+<span class="hljs-meta"><span class="hljs-meta"><span class="hljs-meta">#</span></span><span class="hljs-meta-keyword"><span class="hljs-meta"><span class="hljs-meta-keyword"><span class="hljs-meta"><span class="hljs-meta-keyword">include</span></span></span></span></span><span class="hljs-meta"><span class="hljs-meta"> </span></span><span class="hljs-meta-string"><span class="hljs-meta"><span class="hljs-meta-string"><span class="hljs-meta"><span class="hljs-meta-string">&lt;reg51.h&gt;		/* Include x51 header file */</span></span></span></span></span></span>
+sbit test = P1^<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;		  	 		
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">delay</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">(k)</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">			</span></span><span class="hljs-comment"><span class="hljs-function"><span class="hljs-comment"><span class="hljs-function"><span class="hljs-comment">/* mSecond Delay function for Xtal 11.0592 MHz */</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	<span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">int</span></span></span> i,j;
+	<span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">for</span></span></span> (i=<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;i&lt;k;i++)
+		<span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">for</span></span></span> (j=<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;j&lt;<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">112</span></span></span>;j++);
+}
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">ExtInt_Init</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">		</span></span><span class="hljs-comment"><span class="hljs-function"><span class="hljs-comment"><span class="hljs-function"><span class="hljs-comment">/* External interrupt initialize */</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	IT0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;      		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Interrupt0 on falling edge */</span></span></span>
+	EX0 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;      		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Enable External interrupt0 */</span></span></span>
+	IT1 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;      		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Interrupt1 on falling edge */</span></span></span>
+	EX1 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;      		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Enable External interrupt1 */</span></span></span>
+	EA  = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Enable global interrupt */</span></span></span>
+	IP = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x01</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Set highest priority for Ext. interrupt0 */</span></span></span>
+}
+											
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">External0_ISR</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> interrupt 0 </span></span><span class="hljs-comment"><span class="hljs-function"><span class="hljs-comment"><span class="hljs-function"><span class="hljs-comment">/* External int0 ISR */</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	PCON = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x00</span></span></span>;		 <span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Disable Idle &amp; Power Down mode */</span></span></span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">External1_ISR</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> interrupt 2 </span></span><span class="hljs-comment"><span class="hljs-function"><span class="hljs-comment"><span class="hljs-function"><span class="hljs-comment">/* External int1 ISR */</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	PCON = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x01</span></span></span>;		 <span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Enable Idle mode */</span></span></span>
+				 <span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Enable Power Down mode by PCON = 0x02; */</span></span></span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">main</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+  ExtInt_Init(); 
+	<span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">while</span></span></span>(<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>)		 <span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Toggle P1.0 continuous */</span></span></span>
+	{
+		test = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;
+		delay(<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">30</span></span></span>);
+		test = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;
+		delay(<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">30</span></span></span>);
+	}
+	
+}
+</code></pre><p>&nbsp;</p><h1 id="header5"><strong>Power Down Mode</strong></h1><p>To enable Power down mode, set PD bit i.e. PCON = 0x02. Also note that only hardware reset can cancel this mode.</p><p>Note: according to the Intel’s MCS-51 family user manual:</p><p>“<em>The only exit from Power Down for the 80C51is a hardware reset. Reset redefines all the SPRS, but does not change the on-chip RAM.”</em></p><p>But according to the Atmel’s AT89s51 datasheet:</p><p><em>“Exit from Power-down mode can be initiated either by a hardware reset or by activation of an enabled external interrupt (INT0 or INT1). Reset redefines the SFRs but does not change the on-chip RAM.” </em></p><p>So AT89s51 controller can exit from power down mode by reset as well as by external interrupts also.</p><p>&nbsp;</p>
+		   </div>
+        </div>
+    </div>
+    <!-- end section -->
+    
+   <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full center">
+                        <div class="heading_main text_align_center">
+                            <h2></h2>
+                            <p class="large"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Footer -->
+    <footer class="footer-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/footer_logo.png" alt="#" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-12 white_fonts">
+                    <h4 class="text-align">Contact Us</h4>
+                </div>
+                <div class="margin-top_30 col-md-8 offset-md-2 white_fonts">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="full icon text_align_center">
+                                <img src="images/social1.png">
+                            </div>
+                            <div class="full white_fonts text_align_center">
+                                <p>Karnataka, INDIA
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="full icon text_align_center">
+                                <img src="images/social2.png">
+                            </div>
+                            <div class="full white_fonts text_align_center">
+                                <p>sanskrithitechnology@gmail.com
+                                    </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="row white_fonts margin-top_30">
+                <div class="col-lg-12">
+                    <div class="full">
+                        <div class="center">
+                            <ul class="social_icon">
+                                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="crp">© 2019 Sanskrithi Technology . All Rights Reserved.</p>
+                    <ul class="bottom_menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="termofservice.html">Terms of Service</a></li>
+                        <li><a href="Privacypolicy.html">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script>
+    <script src="js/slider-index.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

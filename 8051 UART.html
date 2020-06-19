@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Site Metas -->
+    <title>Sanskrithi Technology - courses</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="#" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Pogo Slider CSS -->
+    <link rel="stylesheet" href="css/pogo-slider.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="about_us" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/loader.gif" alt="#" />
+        </div>
+    </div>
+    <!-- end loader -->
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-header">
+        <nav class="navbar header-nav navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="image"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd" aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                    <ul class="navbar-nav">
+                        <li><a class="nav-link active" href="index.html">Home</a></li>  
+                        <li><a class="nav-link" href="course.html">courses</a></li>
+						<li><a class="nav-link" href="blog.html">Blog</a></li>
+                        <li><a class="nav-link" href="#">About us</a></li>
+						<li><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+	
+	<!-- section --> 
+	   <div class="innerpage_banner">
+	      <div class="container">
+		     <div class="row"> 
+			    <div class="col-md-12">
+				   <h2>8051 MicroController</h2>
+				   <h3>8051 UART</h3>
+				</div>
+			 </div>
+		  </div>
+	   </div>
+	<!-- end section -->
+
+    <!--div class="section layout_padding">
+       
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full center">
+                        <div class="heading_main text_align_center">
+                            <h2><span class="theme_color">Introduction to 8051 MicroController</span></h2>
+                            <p class="large"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+    </div>
+
+   <!-- section -->
+    <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12 col-md-12 col-sm-12 ">
+				<!--div class="col-md-12 white_fonts-->
+              <div class="coursebody">
+			  <span id="detail_content" style="overflow-wrap: break-word;"><h1 id="header0"><strong>Introduction&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong></h1><p style="text-align:center"><img alt="8051 Serial Parallel Block Diagram" src="cimage/8051/8051%20Serial%20communication%20copy.png"></p><p>Serial communication means transfer data bit by bit serially at a time, where as in parallel communication, the number of bits that can be transferred at a time depends upon the number of data lines available for communication.</p><p>Two methods of serial communication are</p><ul><li>Synchronous Communication: Transfer of bulk data in framed structure at a time</li><li>Asynchronous Communication: Transfer of a byte data in framed structure at a time</li></ul><p>8051 has built in UART with RXD (serial data receive pin) and TXD (serial data transmit pin) on PORT3.0 and PORT3.1 respectively.</p><p>&nbsp;</p><h1 id="header1"><strong>Asynchronous communication</strong></h1><p>Asynchronous serial communication is widely used for byte oriented transmission.</p><p>Frame structure in Asynchronous communication:</p><ul><li><strong>START bit:</strong> It is a bit with which serial communication start and it is always low.</li><li><strong>Data bits packet</strong>: Data bits can be 5 to 9 bits packet. Normally we use 8 data bit packet, which is always sent after START bit.</li><li><strong>STOP bit</strong>: This is one or two bits. It is sent after data bits packet to indicate end of frame. Stop bit is always logic high.</li></ul><p>In asynchronous serial communication frame, first START bit followed by data byte and at last STOP bit, forms a 10-bit frame. Sometimes last bit is also used as parity bit.</p><p style="text-align:center"><img alt="8051 Serial Frame Structure" src="cimage/8051/2_8051_Serial_Frame_Structure.png"></p><p style="text-align:center"><strong>8051 Serial Frame Structure</strong></p><p>&nbsp;</p><h1 id="header2"><strong>Data transmission rate</strong></h1><p>Data transmission rate is measured in bits per second (bps). In binary system it is also called as baud rate (number of signal changes per second). Standard baud rates supported are 1200, 2400, 4800, 19200, 38400, 57600, and 115200. Normally most of the time 9600 bps is used when speed is not a big issue.</p><p><strong>Interface standard</strong></p><ul><li>8051 serial communication has TTL voltage level which are 0 v for logic 0 and 5 v for logic 1.</li><li>In computers and most of the old devices for serial communication, RS232 protocol with DB9 connector is used. RS232 serial communication has different voltage levels than 8051 serial communication. i.e. +3 v to +25 v for logic zero and -3 v to -25 v for logic 1.&nbsp;</li><li>So to communicate with RS232 protocol, we need to use voltage level converter like MAX232 IC.</li><li>Although there are 9 pins in DB9 connector, we don’t need to use all the pins. Only 2nd Tx(Transmit), 3rd Rx(Receive) and 5th GND pin needs to be connected.</li></ul><p style="text-align:center">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img alt="8051 Serial Interface" src="cimage/8051/8051%20Serial%20Interfacing.png"></p><p style="text-align:center"><strong>8051 Serial Interface</strong></p><p>&nbsp;</p><h1 id="header3"><strong>8051 UART Programming</strong></h1><p><strong>Baud Rate calculation:</strong></p><ul><li>To meet the standard baud rates generally crystal with 11.0592 MHz is used.</li><li>As we know, 8051 divides crystal frequency by 12 to get machine cycle frequency of 921.6 kHz.</li><li>Internal UART block of 8051 divides this machine cycle frequency by 32, which gives the frequency of 28800 Hz which is used by UART.</li><li>To achieve baud rate of 9600, again 28800 Hz frequency should be divided by 3.</li><li>This is achieved by using Timer1 in mode-2 (auto reload mode) by putting 253 in TH1 (8-bit reg.)</li><li>So 28800 Hz will get divided by 3 as timer will overflow after every 3 cycles<strong>.</strong></li><li>we can achieve different baud rates by putting division factor in TH1 register.</li></ul><p>&nbsp; &nbsp; &nbsp; &nbsp;</p><p style="text-align:center"><img alt="8051 UART Programming" src="cimage/8051/8051%20UART%20Programming.png"></p><p><strong>Division factor to achieve different baud rates</strong></p><table align="center" border="1" cellspacing="0" cellpadding="0"><thead><tr><th scope="col" style="text-align:center; vertical-align:middle; width:204px"><p><strong>Baud Rate</strong></p></th><th scope="col" style="text-align:center; vertical-align:middle; width:228px"><p><strong>TH1 (Hex)</strong></p></th></tr></thead><tbody><tr><td style="text-align:center; vertical-align:middle; width:204px"><p>9600</p></td><td style="text-align:center; vertical-align:middle; width:228px"><p>FD</p></td></tr><tr><td style="text-align:center; vertical-align:middle; width:204px"><p>4800</p></td><td style="text-align:center; vertical-align:middle; width:228px"><p>FA</p></td></tr><tr><td style="text-align:center; vertical-align:middle; width:204px"><p>2400</p></td><td style="text-align:center; vertical-align:middle; width:228px"><p>F4</p></td></tr><tr><td style="text-align:center; vertical-align:middle; width:204px"><p>1200</p></td><td style="text-align:center; vertical-align:middle; width:228px"><p>E8</p></td></tr></tbody></table><div style="clear:both">&nbsp;</div><p>&nbsp;</p><h1 id="header4"><strong>Serial communication Registers </strong></h1><p><strong>SBUF: Serial Buffer Register</strong></p><p>This is the serial communication data register used to transmit or receive data through it.</p><p><img alt="8051 SBUF Register" src="cimage/8051/5_8051_SBUF_Register.PNG"></p><p>&nbsp;</p><p><strong>SCON: Serial Control Register </strong></p><p>Serial control register SCON is used to set serial communication operation modes. Also it is used to control transmit and receive operations.</p><p><img alt="8051 SCON Register" src="cimage/8051/6_8051_SCON_Register.PNG"></p><p>&nbsp;</p><p><strong>Bit 7:6 - SM0:SM1</strong>: Serial Mode Specifier</p><table align="center" border="1" cellspacing="0" cellpadding="0" style="width:97.08%"><thead><tr><th scope="col" style="text-align:center; vertical-align:middle; width:9.58%"><p><strong>Mode</strong></p></th><th scope="col" style="text-align:center; vertical-align:middle; width:9.58%"><p><strong>SM0</strong></p></th><th scope="col" style="text-align:center; vertical-align:middle; width:9.56%"><p><strong>SM1</strong></p></th><th scope="col" style="text-align:center; vertical-align:middle; width:71.26%"><p><strong>Mode</strong></p></th></tr></thead><tbody><tr><td style="text-align:center; vertical-align:middle; width:9.58%"><p>0</p></td><td style="text-align:center; vertical-align:middle; width:9.58%"><p>0</p></td><td style="text-align:center; vertical-align:middle; width:9.56%"><p>0</p></td><td style="text-align:center; vertical-align:middle; width:71.26%"><p>1/12 of Osc frequency shift register mode fixed baud rate</p></td></tr><tr><td style="text-align:center; vertical-align:middle; width:9.58%"><p>1</p></td><td style="text-align:center; vertical-align:middle; width:9.58%"><p>0</p></td><td style="text-align:center; vertical-align:middle; width:9.56%"><p>1</p></td><td style="text-align:center; vertical-align:middle; width:71.26%"><p>8-bit UART with timer 1 determined baud rate</p></td></tr><tr><td style="text-align:center; vertical-align:middle; width:9.58%"><p>2</p></td><td style="text-align:center; vertical-align:middle; width:9.58%"><p>1</p></td><td style="text-align:center; vertical-align:middle; width:9.56%"><p>0</p></td><td style="text-align:center; vertical-align:middle; width:71.26%"><p>9-bit UART with 1/32 of Osc fixed baud rate</p></td></tr><tr><td style="text-align:center; vertical-align:middle; width:9.58%"><p>3</p></td><td style="text-align:center; vertical-align:middle; width:9.58%"><p>1</p></td><td style="text-align:center; vertical-align:middle; width:9.56%"><p>1</p></td><td style="text-align:center; vertical-align:middle; width:71.26%"><p>9-bit UART with timer 1 determined baud rate</p></td></tr></tbody></table><p>&nbsp;</p><p>Normally mode-1 (SM0 =0, SM1=1) is used with 8 data bits, 1 start bit and 1 stop bit.</p><p><strong>Bit 5 - SM2:</strong> for Multiprocessor Communication</p><p>&nbsp; &nbsp; &nbsp; &nbsp; This bit enables multiprocessor communication feature in mode 2 &amp; 3.</p><p><strong>Bit 4 - REN:</strong> Receive Enable</p><p>&nbsp; &nbsp; &nbsp; &nbsp; 1 = Receive enable</p><p>&nbsp; &nbsp; &nbsp; &nbsp; 0 = Receive disable</p><p><strong>Bit 3 - TB8: </strong>9th Transmit Bit</p><p>&nbsp; &nbsp; &nbsp; &nbsp; This is 9th bit which is to be transmitted in mode 2 &amp; 3 (9-bit mode)</p><p><strong>Bit 2 - RB8: </strong>9th Receive Bit</p><p>This is 9th received bit in mode 2 &amp; 3 (9-bit mode), where as in mode 1, if SM2 = 0 then RB8 hold stop bit that received</p><p><strong>Bit 1 - TI: </strong>Transmit Interrupt Flag</p><p>This bit indicates transmission is complete and gets set after transmitting the byte from buffer. Normally TI (Transmit Interrupt Flag) is set by hardware at the end of 8th bit in mode 0 and at the beginning of stop bit in other modes.</p><p><strong>Bit 0 – RI: </strong>Receive Interrupt Flag</p><p>This bit indicates reception is complete and gets set after receiving the complete byte in buffer. Normally RI (Receive Interrupt Flag) is set by hardware in receiving mode at the end of 8th bit in mode 0 and at the stop bit receive time in other modes.</p><p>&nbsp;</p><h1 id="header5"><strong>Programming steps</strong></h1><ol><li>Configure timer 1 in auto reload mode.</li><li>Load TH1 with value as per required baud rate e.g. for 9600 baud rate load 0xFD. (-3 in decimal)</li><li>Load SCON with serial mode and control bits. e.g. for mode 1 and enable reception, load 0x50.</li><li>Start timer1 by setting TR1 bit to 1.</li><li>Load transmitting data in SBUF register.</li><li>Wait until loaded data is completely transmitted by polling TI flag.</li><li>When TI flag is set, clear it and repeat from step 5 to transmit more data.</li></ol><p>&nbsp;</p><p><strong>Example</strong></p><p>Let's Program 8051 (here AT89C51) to send character data “test” serially at 9600 baud rate in mode 1</p><h1 id="header6"><strong>Program for serial data transmit</strong></h1><pre><code class="language-c hljs cpp"><span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">
+ 
+ </span></span></span>
+
+<span class="hljs-meta"><span class="hljs-meta"><span class="hljs-meta">#</span></span><span class="hljs-meta-keyword"><span class="hljs-meta"><span class="hljs-meta-keyword"><span class="hljs-meta"><span class="hljs-meta-keyword">include</span></span></span></span></span><span class="hljs-meta"><span class="hljs-meta"> </span></span><span class="hljs-meta-string"><span class="hljs-meta"><span class="hljs-meta-string"><span class="hljs-meta"><span class="hljs-meta-string">&lt;reg51.h&gt;		/* Include x51 header file */</span></span></span></span></span></span>
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">UART_Init</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	TMOD = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x20</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Timer 1, 8-bit auto reload mode */</span></span></span>
+	TH1 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0xFD</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Load value for 9600 baud rate */</span></span></span>
+	SCON = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x50</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Mode 1, reception enable */</span></span></span>
+	TR1 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Start timer 1 */</span></span></span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">Transmit_data</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">(</span></span></span></span><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-params"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-params"><span class="hljs-keyword">char</span></span></span></span></span></span></span><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"> tx_data)</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	SBUF = tx_data;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Load char in SBUF register */</span></span></span>
+	<span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">while</span></span></span> (TI==<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>);		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Wait until stop bit transmit */</span></span></span>
+	TI = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;			<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Clear TI flag */</span></span></span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">String</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">(</span></span></span></span><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-params"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-params"><span class="hljs-keyword">char</span></span></span></span></span></span></span><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"> *str)</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	<span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">int</span></span></span> i;
+	<span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">for</span></span></span>(i=<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;str[i]!=<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;i++)	<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Send each char of string till the NULL */</span></span></span>
+	{
+		Transmit_data(str[i]);	<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Call transmit data function */</span></span></span>
+	}
+}	
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">main</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	UART_Init();		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* UART initialize function */</span></span></span>
+	String(<span class="hljs-string"><span class="hljs-string"><span class="hljs-string">"test"</span></span></span>);		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Transmit 'test' */</span></span></span>
+	<span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">while</span></span></span>(<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>);
+}
+</code></pre><hr><h1 id="header7"><strong>8051 serial interrupt</strong></h1><p>8051 UART has a serial interrupt. Whenever data is transmitted or received, serial interrupt flags TI and RI are activated respectively.</p><p>8051 serial interrupt has vector address (0023H) where it can jump to serve ISR (Interrupt service routine) if global and serial interrupt is enabled.</p><p>Let's see how serial interrupt routine will be used in serial communication programming.</p><p><strong>Programming steps</strong></p><ol><li>Set timer 1 in auto reload mode.</li><li>Load TH1 with value as per required baud rate e.g. for 9600 baud rate load 0xFD.</li><li>Load SCON with serial mode and control bits. e.g. for mode 1 and enable reception load 0x50.</li><li>Start timer1 by setting TR1 bit to 1.</li><li>Enable Global and serial interrupt bit, i.e. EA = 1 and ES = 1.</li><li>Now whenever data is received or transmitted, interrupt flag will set and controller will jump to serial ISR.</li><li>Note that, TI/RI flag must be cleared by software in ISR.</li></ol><p>Note: For transmission and reception interrupt, same interrupt vector address is assigned, so when controller jumps to the ISR, we have to check whether it is Tx interrupt or Rx interrupt by TI and RI bits status.</p><p>&nbsp;</p><p><strong>Example</strong></p><p>Let's Program 8051 (here AT89C51) to receive character data serially at 9600 baud rate in mode 1 and send received data on port 1 using serial interrupt.</p><ul><li>In this example, after byte is received, RI flag is set which will generate serial interrupt.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li><li>After interrupt, 8051 will jump to serial ISR routine.</li><li>In ISR routine, we will send data to port 1.</li></ul><p>&nbsp;</p><h1 id="header8"><strong>Program for serial interrupt</strong></h1><pre><code class="language-c hljs cpp"><span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment"></span></span></span>
+
+<span class="hljs-meta"><span class="hljs-meta"><span class="hljs-meta">#</span></span><span class="hljs-meta-keyword"><span class="hljs-meta"><span class="hljs-meta-keyword"><span class="hljs-meta"><span class="hljs-meta-keyword">include</span></span></span></span></span><span class="hljs-meta"><span class="hljs-meta"> </span></span><span class="hljs-meta-string"><span class="hljs-meta"><span class="hljs-meta-string"><span class="hljs-meta"><span class="hljs-meta-string">&lt;reg51.h&gt;		/* Include x51 header file */</span></span></span></span></span></span>
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">Ext_int_Init</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">				
+</span></span></span>{
+	EA  = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Enable global interrupt */</span></span></span>
+	ES = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;  		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Enable serial interrupt */</span></span></span>			
+}
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">UART_Init</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	TMOD = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x20</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Timer 1, 8-bit auto reload mode */</span></span></span>
+	TH1 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0xFD</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Load value for 9600 baud rate */</span></span></span>
+	SCON = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x50</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Mode 1, reception enable */</span></span></span>
+	TR1 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Start timer 1 */</span></span></span>
+}
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">Serial_ISR</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> interrupt 4    
+</span></span></span>{
+	P1 = SBUF;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Give received data on port 1 */</span></span></span>
+	RI = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0</span></span></span>;			<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Clear RI flag */</span></span></span>
+} 
+
+<span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span></span></span><span class="hljs-function"><span class="hljs-function"> </span></span><span class="hljs-title"><span class="hljs-function"><span class="hljs-title"><span class="hljs-function"><span class="hljs-title">main</span></span></span></span></span><span class="hljs-params"><span class="hljs-function"><span class="hljs-params"><span class="hljs-function"><span class="hljs-params">()</span></span></span></span></span><span class="hljs-function"><span class="hljs-function">
+</span></span></span>{
+	P1 = <span class="hljs-number"><span class="hljs-number"><span class="hljs-number">0x00</span></span></span>;		<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Make P1 output */</span></span></span>
+	Ext_int_Init();  	<span class="hljs-comment"><span class="hljs-comment"><span class="hljs-comment">/* Call Ext. interrupt initialize */</span></span></span>
+	UART_Init();
+	<span class="hljs-keyword"><span class="hljs-keyword"><span class="hljs-keyword">while</span></span></span>(<span class="hljs-number"><span class="hljs-number"><span class="hljs-number">1</span></span></span>);
+}
+</code></pre><p>&nbsp;</p>
+			 
+			 </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+    
+   <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full center">
+                        <div class="heading_main text_align_center">
+                            <h2></h2>
+                            <p class="large"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Footer -->
+    <footer class="footer-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/footer_logo.png" alt="#" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-12 white_fonts">
+                    <h4 class="text-align">Contact Us</h4>
+                </div>
+                <div class="margin-top_30 col-md-8 offset-md-2 white_fonts">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="full icon text_align_center">
+                                <img src="images/social1.png">
+                            </div>
+                            <div class="full white_fonts text_align_center">
+                                <p>Karnataka, INDIA
+                                    </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="full icon text_align_center">
+                                <img src="images/social2.png">
+                            </div>
+                            <div class="full white_fonts text_align_center">
+                                <p>sanskrithitechnology@gmail.com
+                                    </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="row white_fonts margin-top_30">
+                <div class="col-lg-12">
+                    <div class="full">
+                        <div class="center">
+                            <ul class="social_icon">
+                                <li><a href="#"><i class="fa fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="crp">© 2019 Sanskrithi Technology . All Rights Reserved.</p>
+                    <ul class="bottom_menu">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="termofservice.html">Terms of Service</a></li>
+                        <li><a href="Privacypolicy.html">Privacy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="#" id="scroll-to-top" class="hvr-radial-out"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.pogo-slider.min.js"></script>
+    <script src="js/slider-index.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/form-validator.min.js"></script>
+    <script src="js/contact-form-script.js"></script>
+    <script src="js/isotope.min.js"></script>
+    <script src="js/images-loded.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
