@@ -22,7 +22,9 @@
 .top-header .navbar .navbar-collapse ul li a {
 padding: 7px 15px;
 }
-
+.coursebody img {
+         width: 90%;
+    }
 .team_member_img .social_icon_team {
     top: 0;
     left: 0;
@@ -252,6 +254,9 @@ padding: 7px 15px;
     }
      .navbar-brand img {
          width: 175px;
+    }
+ .coursebody img {
+         width: 85%;
     }
 	
      .top-header {
